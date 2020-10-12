@@ -4,10 +4,9 @@ import Header from './component/Header';
 function App() {
   return (
     <Fragment>
-        <Header/>
-        <Header/>
-        <Header/>
-        <Header/>
+        <Header
+          titulo="Cotizador de Prestamos"
+        />
     </Fragment>
   );
 }

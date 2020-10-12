@@ -1,8 +1,11 @@
-import React from 'react';
-function Header(){
+import React, {Fragment} from 'react';
+function Header({titulo}){
 
+    //Todo lo que esta dentro del return es lo que se va a mostrar
     return(
-        <h1>Hola Mundo</h1>
+        <Fragment>
+            <h1>{titulo}</h1>
+        </Fragment>
     )
 
 }
