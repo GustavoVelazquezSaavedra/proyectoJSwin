@@ -20,7 +20,7 @@ export function calcularTotal(cantidad,plazo){
         totalCantidad = cantidad * .10;
     }
 
-    console.log(totalCantidad);
+    
 
     /*
         Calcular el plazo
@@ -30,4 +30,22 @@ export function calcularTotal(cantidad,plazo){
         24 = 20%
     
     */
+   let totalPlazo=0;
+   switch(plazo){
+        case 3: 
+            totalPlazo = cantidad *.05;
+            break;
+        case 6: 
+            totalPlazo = cantidad *.10;
+            break;
+        case 12: 
+            totalPlazo = cantidad *.15;
+            break;
+        case 24: 
+            totalPlazo = cantidad *.20;
+            break;
+        default:
+            break;
+   }
+   return totalPlazo + totalCantidad + cantidad;
 }
